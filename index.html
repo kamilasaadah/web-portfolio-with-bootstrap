@@ -33,7 +33,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Kamila's Portofolio</a>
+            <a class="navbar-brand fw-bold" href="#">Kamila's Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -622,6 +622,8 @@
                 <div class="col-lg-7" data-aos="fade-left">
                     <div class="card h-100">
                         <div class="card-body p-4">
+                            <h3 class="fw-bold mb-3">Send Me an Email!</h3>
+                            <p class="text-muted mb-4">Please fill out the form below to contact me. I'll get back to you as soon as possible 😊</p>
                             <form>
                                 <div class="row g-3">
                                     <div class="col-md-6">
@@ -634,6 +636,12 @@
                                         <div class="form-floating mb-3">
                                             <input type="email" class="form-control" id="emailInput" placeholder="Your Email">
                                             <label for="emailInput">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating mb-3">
+                                            <input type="tel" class="form-control" id="telpInput" placeholder="Phone">
+                                            <label for="telpInput">Phone</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -747,14 +755,23 @@
         
         // Back to top button
         const backToTopButton = document.querySelector('.back-to-top');
+
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
-                backToTopButton.classList.add('show');
+            backToTopButton.classList.add('show');
             } else {
-                backToTopButton.classList.remove('show');
+            backToTopButton.classList.remove('show');
             }
         });
 
+        // Scroll halus ke atas
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+            });
+        });
 
         // Inisialisasi EmailJS
         (function() {
@@ -769,6 +786,7 @@
             const params = {
                 name: document.getElementById("nameInput").value,
                 email: document.getElementById("emailInput").value,
+                telp: document.getElementById("telpInput").value,
                 subject: document.getElementById("subjectInput").value,
                 message: document.getElementById("messageInput").value
             };

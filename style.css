@@ -345,3 +345,70 @@ h1, h2, h3, h4, h5, h6 {
         padding-bottom: 3rem;
     }
 }
+
+/* ==== DARK MODE FIXES ==== */
+
+/* Cards dan form di dark mode */
+[data-bs-theme="dark"] .card {
+  background-color: #1e293b;
+  color: #f8fafc;
+  border-color: var(--border);
+}
+
+/* Background terang yang terlalu kontras */
+[data-bs-theme="dark"] .bg-light {
+  background-color: #0f172a !important;
+}
+
+/* Form input */
+[data-bs-theme="dark"] .form-control {
+  background-color: #0f172a;
+  color: #f8fafc;
+  border-color: #334155;
+}
+
+[data-bs-theme="dark"] .form-control:focus {
+  background-color: #1e293b;
+  border-color: var(--primary);
+  color: #f8fafc;
+}
+
+/* Label floating form */
+[data-bs-theme="dark"] .form-floating label {
+  color: #94a3b8;
+}
+
+/* Contact info card (yang biru) tetap biru terang */
+[data-bs-theme="dark"] .contact-info-card {
+  background-color: var(--primary-dark);
+  color: #fff;
+}
+
+/* Blog dan Portfolio card */
+[data-bs-theme="dark"] .portfolio-card,
+[data-bs-theme="dark"] .blog-card,
+[data-bs-theme="dark"] .testimonial-card {
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+/* Navbar di dark mode */
+[data-bs-theme="dark"] .navbar {
+  background-color: #0f172a;
+}
+
+/* Footer */
+[data-bs-theme="dark"] .footer {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+/* Dark mode fix for outline-dark buttons */
+[data-bs-theme="dark"] .btn-outline-dark {
+  color: #f8fafc;
+  border-color: #f8fafc;
+}
+
+[data-bs-theme="dark"] .btn-outline-dark:hover {
+  background-color: #f8fafc;
+  color: #0f172a;
+}

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light"> 
+<html lang="en" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamila - Website Developer & UI/UX Enthusiast</title>
+    <title>Kamila - Full Stack Developer</title>
     <link rel="icon" type="image/png" href="img/favicon-2.png">
-    <meta property="og:title" content="Kamila - Website Developer & UI/UX Enthusiast">
-    <meta property="og:description" content="Portfolio Website Developer & UI/UX Designer">
+    <meta property="og:title" content="Kamila - Full Stack Developer">
+    <meta property="og:description" content="Portfolio Full Stack Developer">
     <meta property="og:image" content="https://kamilasaadah.github.io/web-portfolio-with-bootstrap/mila-profile.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kamilasaadah.github.io/web-portfolio-with-bootstrap/">
@@ -20,17 +20,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- EmailJS -->
-     <!-- EmailJS SDK -->
+    <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
-
-
 <body>
-    <!-- Navbar -->
+    <!--Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">Kamila's Portfolio</a>
@@ -50,6 +49,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#blog">Blog</a>
@@ -76,7 +78,7 @@
                         <span class="badge bg-primary px-3 py-2 position-absolute top-0 start-0 translate-middle">Hello, I'm</span>
                         <h1 class="display-4 fw-bold mt-4">Kamilatus Sa'adah</h1>
                     </div>
-                    <h2 class="mb-4 fw-light">Website Developer & UI/UX Enthusiast</h2>
+                    <h2 class="mb-4 fw-light">Full Stack Developer</h2>
                     <p class="lead mb-4">I create beautiful, functional, and user-centered digital experiences that help businesses and individuals achieve their goals.</p>
                     <div class="d-flex gap-3">
                         <a href="#portfolio" class="btn btn-primary px-4 py-2">View Portfolio</a>
@@ -110,12 +112,12 @@
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
                     <div class="about-img-container">
-                        <img src="mila-profile4.jpg" alt="About Me" class="img-fluid rounded-4">
+                        <img src="img/mila-profile-1.jpg" alt="About Me" class="img-fluid rounded-4">
                     </div>
                 </div>
                 <div class="col-lg-7" data-aos="fade-left">
-                    <h3 class="fw-bold mb-3">Website Developer & UI/UX Designer</h3>
-                    <p class="mb-4">I'm a passionate website developer and UI/UX enthusiast with 1.5+ years of experience creating beautiful, functional, and user-centered digital experiences. I specialize in Laravel development and have a strong background in creating intuitive user interfaces that enhance user experience.</p>
+                    <h3 class="fw-bold mb-3">Full Stack Developer</h3>
+                    <p class="mb-4">Motivated Informatics Engineering student at Universitas Airlangga, Surabaya, with strong academic performance and extensive organizational experience. Skilled in software testing (manual, UAT, regression testing), documentation, and basic automation using HTML & CSS. Adept at teamwork, event coordination, and critical thinking. Eager to apply knowledge in Quality Assurance to contribute to delivering high-quality applications in a fast-paced environment.</p>
                     <p class="mb-4">My approach combines technical expertise with creative problem-solving to deliver solutions that not only meet but exceed client expectations. I believe in clean code, responsive design, and accessibility as core principles in my work.</p>
                     
                     <div class="row mb-4">
@@ -145,40 +147,55 @@
                         </div>
                     </div>
                     
-                    <div class="skills-container mb-4">
-                        <h4 class="fw-bold mb-3">My Skills</h4>
-                        <div class="row g-3">
-                            <div class="col-auto">
-                                <div class="skill-badge">Laravel</div>
-                            </div>
-                            <div class="col-auto">
-                                <div class="skill-badge">Bootstrap</div>
-                            </div>
-                            <div class="col-auto">
-                                <div class="skill-badge">Backend</div>
-                            </div>
-                            <div class="col-auto">
-                                <div class="skill-badge">Figma</div>
-                            </div>
-                            <div class="col-auto">
-                                <div class="skill-badge">UI/UX</div>
-                            </div>
-                            <div class="col-auto">
-                                <div class="skill-badge">JavaScript</div>
-                            </div>
-                            <div class="col-auto">
-                                <div class="skill-badge">Git</div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- <div class="mb-4" data-aos="fade-up" data-aos-delay="150">
+                        <h4 class="fw-bold mb-2">My Skills</h4>
+                        <p class="text-muted mb-0">For a full list of skills with animations, please see the dedicated section <a href="#skills" class="btn btn-link p-0 align-baseline">here</a>.</p>
+                    </div> -->
                     
-                    <a href="https://drive.google.com/file/d/14_k6EFMn5QnnoJhnQ6ecCWLifb-uue_B/view?usp=sharing" class="btn btn-primary px-4 py-2">
-                        <i class="bi bi-download me-2"></i>Lihat CV
+                    <a href="https://drive.google.com/file/d/14_k6EFMn5QnnoJhnQ6ecCWLifb-uue_B/view?usp=sharing" class="btn btn-primary px-4 py-2" data-aos="fade-up" data-aos-delay="200">
+                        <i class="bi bi-download me-2"></i>View CV
                     </a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills py-6 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <h6 class="text-primary fw-bold mb-2" data-aos="fade-up">MY SKILLS</h6>
+                    <h2 class="fw-bold mb-4 text-balance" data-aos="fade-up" data-aos-delay="100">Tech Stack & Tools</h2>
+                    <p class="mb-0" data-aos="fade-up" data-aos-delay="150">Skills I frequently use in web, mobile, and design development.</p>
+                </div>
+            </div>
+            <div class="row g-3 justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-auto"><div class="skill-badge reveal-skill">Laravel</div></div>
+                <div class="col-auto"><div class="skill-badge reveal-skill">Flutter</div></div>
+                <div class="col-auto"><div class="skill-badge reveal-skill">Node.js</div></div>
+                <div class="col-auto"><div class="skill-badge reveal-skill">React</div></div>
+                <div class="col-auto"><div class="skill-badge reveal-skill">Backend</div></div>
+                <div class="col-auto"><div class="skill-badge reveal-skill">Figma</div></div>
+                <div class="col-auto"><div class="skill-badge reveal-skill">UI/UX</div></div>
+                <div class="col-auto"><div class="skill-badge reveal-skill">JavaScript</div></div>
+                <div class="col-auto"><div class="skill-badge reveal-skill">HTML & CSS</div></div>
+                <div class="col-auto"><div class="skill-badge reveal-skill">Git</div></div>
+                <div class="col-auto"><div class="skill-badge reveal-skill">PHP</div></div>
+                <div class="col-auto"><div class="skill-badge reveal-skill">Dart</div></div>
+                <div class="col-auto"><div class="skill-badge reveal-skill">Python</div></div>
+                <div class="col-auto"><div class="skill-badge reveal-skill">MongoDB</div></div>
+                <div class="col-auto"><div class="skill-badge reveal-skill">SQL</div></div>
+                <div class="col-auto"><div class="skill-badge reveal-skill">Manual Testing</div></div>
+                <div class="col-auto"><div class="skill-badge reveal-skill">UAT</div></div>
+                <div class="col-auto"><div class="skill-badge reveal-skill">Regression Testing</div></div>
+                <div class="col-auto"><div class="skill-badge reveal-skill">Microsoft Office</div></div>
+                <div class="col-auto"><div class="skill-badge reveal-skill">Google Workspace</div></div>
+                <div class="col-auto"><div class="skill-badge reveal-skill">Canva</div></div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio py-6 bg-light">
@@ -187,100 +204,98 @@
                 <div class="col-lg-6 text-center">
                     <h6 class="text-primary fw-bold mb-2" data-aos="fade-up">MY PORTFOLIO</h6>
                     <h2 class="fw-bold mb-4" data-aos="fade-up" data-aos-delay="100">Recent Projects</h2>
-                    <p class="mb-0" data-aos="fade-up" data-aos-delay="200">Here are some of my recent projects that showcase my skills and expertise in website development, UI/UX design and more.</p>
+                    <p class="mb-0" data-aos="fade-up" data-aos-delay="200">
+                        Here are some of my recent projects that showcase my skills and expertise in web development, UI/UX design, and more.
+                    </p>
                 </div>
             </div>
-            
+
             <div class="row g-4">
                 <!-- Project 1 -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up">
                     <div class="card portfolio-card h-100">
                         <div class="portfolio-img">
-                            <img src="decentgrowth1.png  " class="card-img-top" alt="Project 1">
+                            <img src="img/decentgrowth.png" class="card-img-top" alt="DecentGrowth Project">
                         </div>
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h5 class="card-title mb-0">DecentGrowt</h5>
-                                <span class="badge bg-primary">Software Recuirements</span>
+                                <h5 class="card-title mb-0">DecentGrowth</h5>
+                                <span class="badge bg-primary">Software Requirements</span>
                             </div>
-                            <p class="card-text">DecentGrowth is a web-based digital platform designed to help individuals from disadvantaged backgrounds find and access decent employment opportunities. The platform connects job seekers with job opportunities through skills-based matching, interactive location maps, and a secure online payment system.</p>
+                            <p class="card-text clamp-3">
+                                DecentGrowth is a web-based digital platform designed to help individuals from disadvantaged backgrounds find and access decent employment opportunities. The platform connects job seekers with potential employers through skills-based matching, interactive location maps, and a secure online payment system. This project focuses on developing an SRS (Software Requirements Specification) document.
+                            </p>
                             <div class="d-flex gap-2 mt-3">
-                                <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
-                                <a href="#" class="btn btn-sm btn-outline-dark">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                                <a href="#" class="btn btn-sm btn-outline-dark">
+                                <a href="https://drive.google.com/file/d/1R6AsfBM4rZKXtB-18zBDCKQ2CwPr5H1q/view?usp=sharing" class="btn btn-sm btn-outline-dark">
                                     <i class="bi bi-link-45deg"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Project 2 -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="card portfolio-card h-100">
                         <div class="portfolio-img">
-                            <img src="medistore.png" class="card-img-top" alt="Project 2">
+                            <img src="img/medistore.png" class="card-img-top" alt="MediStore Project">
                         </div>
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <h5 class="card-title mb-0">MediStore</h5>
                                 <span class="badge bg-primary">Laravel</span>
                             </div>
-                            <p class="card-text">MediStore is a web-based digital platform that functions as an information system and drug ordering for the general public. This platform allows pharmacies to manage drug stock in a more structured way and provides convenience for users in ordering drugs online.</p>
+                            <p class="card-text clamp-3">
+                                MediStore is a web-based digital platform that serves as an information and drug ordering system for the general public. It enables pharmacies to manage their drug stock more efficiently while providing convenience for users to order medicine online. The platform is built using PHP with the Laravel framework and MySQL for the backend.
+                            </p>
                             <div class="d-flex gap-2 mt-3">
-                                <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
-                                <a href="#" class="btn btn-sm btn-outline-dark">
+                                <a href="https://github.com/FDAGaming/Tugas-Workshop-kelompok-2.git" class="btn btn-sm btn-outline-dark">
                                     <i class="bi bi-github"></i>
-                                </a>
-                                <a href="#" class="btn btn-sm btn-outline-dark">
-                                    <i class="bi bi-link-45deg"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Project 3 -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="card portfolio-card h-100">
                         <div class="portfolio-img">
-                            <img src="img/railku.png" class="card-img-top" alt="Project 3">
+                            <img src="img/railku.png" class="card-img-top" alt="RailKu Project">
                         </div>
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <h5 class="card-title mb-0">RailKu</h5>
                                 <span class="badge bg-primary">Prototype UI/UX</span>
                             </div>
-                            <p class="card-text">This project is a train ticket booking application designed to provide ease and convenience for users in booking train tickets. This application includes Intercity train ticket booking that allows users to book train tickets for long-distance travel between major cities.</p>
+                            <p class="card-text clamp-3">
+                                RailKu is a train ticket booking application designed to make it easier and more convenient for users to book intercity train tickets for long-distance travel between major cities.
+                            </p>
                             <div class="d-flex gap-2 mt-3">
-                                <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
-                                <a href="#" class="btn btn-sm btn-outline-dark">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                                <a href="#" class="btn btn-sm btn-outline-dark">
-                                    <i class="bi bi-link-45deg"></i>
+                                <a href="https://www.figma.com/proto/dVCphx691bA07tmkuSEUCe/project-ui?node-id=162-11935&starting-point-node-id=162%3A11935&t=Zaq5MlVestOemOBF-1" class="btn btn-sm btn-outline-dark">
+                                    <i class="fa-brands fa-figma"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Project 4 -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="card portfolio-card h-100">
                         <div class="portfolio-img">
-                            <img src="BANSOSFIX.png" class="card-img-top" alt="Project 4">
+                            <img src="BANSOSFIX.png" class="card-img-top" alt="BansosFix Project">
                         </div>
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <h5 class="card-title mb-0">BansosFix</h5>
                                 <span class="badge bg-primary">Project Management</span>
                             </div>
-                            <p class="card-text">BansosFix is here as a digital solution to ensure the validation of poverty data in the 10 poorest areas in East Java to be more transparent and accurate. This system allows IT-based survey teams to check the validity of aid recipient data reported by village heads and regents.</p>
+                            <p class="card-text clamp-3">
+                                BansosFix is a digital solution designed to ensure the validation of poverty data in the 10 poorest regions of East Java is more transparent and accurate.
+                                This system allows IT-based survey teams to verify the validity of aid recipient data reported by local officials.
+                            </p>
                             <div class="d-flex gap-2 mt-3">
-                                <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
                                 <a href="#" class="btn btn-sm btn-outline-dark">
                                     <i class="bi bi-github"></i>
                                 </a>
@@ -293,23 +308,26 @@
                 </div>
 
                 <!-- Project 5 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                     <div class="card portfolio-card h-100">
                         <div class="portfolio-img">
-                            <img src="img/panenia.png" class="card-img-top" alt="Project 5">
+                            <img src="img/panenia.png" class="card-img-top" alt="Panenia Project">
                         </div>
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <h5 class="card-title mb-0">Panenia</h5>
-                                <span class="badge bg-primary">Frontend Dev</span>
+                                <span class="badge bg-primary">Frontend Development</span>
                             </div>
-                            <p class="card-text">Project UI/UX Desaign</p>
+                            <p class="card-text clamp-3">
+                                Panenia is an e-commerce website for agricultural products such as vegetables, fruits, spices, and other essentials.
+                                It includes features like online ordering, payment processing, shopping cart, purchase history, related articles, and an admin dashboard for managing sales.
+                                The project is built using HTML, CSS, and JavaScript.
+                            </p>
                             <div class="d-flex gap-2 mt-3">
-                                <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
-                                <a href="#" class="btn btn-sm btn-outline-dark">
+                                <a href="https://github.com/kamilasaadah/panenia.git" class="btn btn-sm btn-outline-dark">
                                     <i class="bi bi-github"></i>
                                 </a>
-                                <a href="#" class="btn btn-sm btn-outline-dark">
+                                <a href="https://kamilasaadah.github.io/panenia/" class="btn btn-sm btn-outline-dark">
                                     <i class="bi bi-link-45deg"></i>
                                 </a>
                             </div>
@@ -318,24 +336,71 @@
                 </div>
 
                 <!-- Project 6 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
                     <div class="card portfolio-card h-100">
                         <div class="portfolio-img">
-                            <img src="img/sweetnestbakery.png" class="card-img-top" alt="Project 6">
+                            <img src="img/sweetnestbakery.png" class="card-img-top" alt="Sweetnest Bakery Project">
                         </div>
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <h5 class="card-title mb-0">Sweetnest Bakery</h5>
-                                <span class="badge bg-primary">Frontend Dev</span>
+                                <span class="badge bg-primary">Frontend Development</span>
                             </div>
-                            <p class="card-text">Project UI/UX Desaign</p>
+                            <p class="card-text clamp-3">
+                                A UI/UX landing page design project built using HTML and CSS, applying structured layout sections for a clean and visually appealing interface.
+                            </p>
                             <div class="d-flex gap-2 mt-3">
-                                <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
-                                <a href="#" class="btn btn-sm btn-outline-dark">
+                                <a href="https://github.com/kamilasaadah/sweetnestbakery" class="btn btn-sm btn-outline-dark">
                                     <i class="bi bi-github"></i>
                                 </a>
-                                <a href="#" class="btn btn-sm btn-outline-dark">
-                                    <i class="bi bi-link-45deg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card portfolio-card h-100">
+                        <div class="portfolio-img">
+                            <img src="img/pastryparadise.png" class="card-img-top" alt="Pastry Paradise Project">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Pastry Paradise</h5>
+                                <span class="badge bg-primary">Mobile App Programming</span>
+                            </div>
+                            <p class="card-text clamp-3">
+                                A full-stack mobile application project about pastry recipes, developed using Dart and the Flutter framework with PocketBase as the backend.
+                            </p>
+                            <div class="d-flex gap-2 mt-3">
+                                <a href="https://github.com/kamilasaadah/pastryparadise" class="btn btn-sm btn-outline-dark">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+                    <div class="card portfolio-card h-100">
+                        <div class="portfolio-img">
+                            <img src="img/towerdefense.png" class="card-img-top" alt="Tower Defense Project">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Tower Defense</h5>
+                                <span class="badge bg-primary">Artificial Intelligence</span>
+                            </div>
+                            <p class="card-text clamp-3">
+                                A project that implements artificial intelligence in a tower defense game using Python, applying the Mamdani fuzzy logic concept.
+                            </p>
+                            <div class="d-flex gap-2 mt-3">
+                                <a href="https://github.com/kamilasaadah/towerdefense" class="btn btn-sm btn-outline-dark">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://www.figma.com/proto/spLEZSxOwPaVoVbfshgOt8/AI-Tower-Defense?node-id=96-66&t=IYPCD34XTgQ4XvAJ-1" class="btn btn-sm btn-outline-dark">
+                                    <i class="fa-brands fa-figma"></i>
                                 </a>
                             </div>
                         </div>
@@ -346,145 +411,116 @@
         </div>
     </section>
 
-    <!-- Experience & Testimonials Section -->
+
+    <!-- Experience Section -->
     <section id="experience" class="experience py-6">
         <div class="container">
             <div class="row justify-content-center mb-5">
-                <div class="col-lg-6 text-center">
-                    <h6 class="text-primary fw-bold mb-2" data-aos="fade-up">EXPERIENCE</h6>
-                    <h2 class="fw-bold mb-4" data-aos="fade-up" data-aos-delay="100">Work Experience & Testimonials</h2>
+                <div class="col-lg-8 text-center">
+                    <h6 class="text-primary fw-bold mb-2" data-aos="fade-up">MY EXPERIENCE</h6>
+                    <h2 class="fw-bold mb-4 text-balance" data-aos="fade-up" data-aos-delay="100">Organizational & Leadership Experience</h2>
+                    <p class="mb-0" data-aos="fade-up" data-aos-delay="150">Ringkasan pengalaman organisasi dengan tampilan timeline yang dinamis.</p>
                 </div>
             </div>
-            
-            <div class="row mb-5">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h3 class="fw-bold mb-4">Work Experience</h3>
-                    
-                    <!-- Experience 1 -->
-                    <div class="card experience-card mb-4">
+
+            <div class="timeline mx-auto" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card shadow-sm">
                         <div class="card-body">
-                            <div class="d-flex justify-content-between mb-2">
-                                <h5 class="card-title mb-0">Senior Website Developer</h5>
-                                <span class="badge bg-primary">2022 - Present</span>
-                            </div>
-                            <h6 class="mb-3">TechInnovate Solutions</h6>
-                            <p class="card-text">Lead the development of multiple Flutter applications for clients across various industries. Managed a team of 3 junior developers and implemented CI/CD pipelines for streamlined deployment.</p>
-                            <div class="mt-3">
-                                <span class="skill-badge small">Flutter</span>
-                                <span class="skill-badge small">Firebase</span>
-                                <span class="skill-badge small">Team Leadership</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Experience 2 -->
-                    <div class="card experience-card mb-4">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between mb-2">
-                                <h5 class="card-title mb-0">UI/UX Designer</h5>
-                                <span class="badge bg-primary">2020 - 2022</span>
-                            </div>
-                            <h6 class="mb-3">DesignHub Agency</h6>
-                            <p class="card-text">Created user-centered designs for mobile and web applications. Conducted user research, developed wireframes, prototypes, and collaborated with development teams to ensure design implementation.</p>
-                            <div class="mt-3">
-                                <span class="skill-badge small">Figma</span>
-                                <span class="skill-badge small">UI/UX</span>
-                                <span class="skill-badge small">User Research</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Experience 3 -->
-                    <div class="card experience-card">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between mb-2">
-                                <h5 class="card-title mb-0">Junior Developer</h5>
-                                <span class="badge bg-primary">2019 - 2020</span>
-                            </div>
-                            <h6 class="mb-3">StartApp Inc.</h6>
-                            <p class="card-text">Developed and maintained mobile applications using Flutter. Collaborated with the design team to implement UI/UX designs and fixed bugs to improve app performance.</p>
-                            <div class="mt-3">
-                                <span class="skill-badge small">Flutter</span>
-                                <span class="skill-badge small">Dart</span>
-                                <span class="skill-badge small">Git</span>
-                            </div>
+                            <h5 class="mb-1">Vice Chairperson - IPPNU PR Kemiri, Pasuruan</h5>
+                            <p class="text-muted small mb-2">Nov 2023 - Present</p>
+                            <p class="mb-0">Provided leadership and coordinated youth activities at the community level. Managed organizational planning and communication.</p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-6" data-aos="fade-left">
-                    <h3 class="fw-bold mb-4">Testimonials</h3>
-                    
-                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <!-- Testimonial 1 -->
-                            <div class="carousel-item active">
-                                <div class="card testimonial-card">
-                                    <div class="card-body">
-                                        <div class="d-flex mb-3">
-                                            <i class="bi bi-quote text-primary display-1 me-3"></i>
-                                            <div>
-                                                <p class="card-text">Kamila is an exceptional website developer who delivered our fitness app beyond our expectations. Her attention to detail and user-centered approach resulted in an intuitive and beautiful application that our users love.</p>
-                                                <div class="d-flex align-items-center mt-3">
-                                                    <img src="profile.jpg" class="rounded-circle me-3" width="60" height="60" alt="Client">
-                                                    <div>
-                                                        <h5 class="mb-0">Sarah Johnson</h5>
-                                                        <p class="mb-0 text-muted">CEO, FitLife Inc.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Testimonial 2 -->
-                            <div class="carousel-item">
-                                <div class="card testimonial-card">
-                                    <div class="card-body">
-                                        <div class="d-flex mb-3">
-                                            <i class="bi bi-quote text-primary display-1 me-3"></i>
-                                            <div>
-                                                <p class="card-text">Working with Kamila on our e-commerce app was a pleasure. She understood our requirements perfectly and translated them into a seamless user experience. Her technical skills and design sensibility are truly impressive.</p>
-                                                <div class="d-flex align-items-center mt-3">
-                                                    <img src="profile.jpg" class="rounded-circle me-3" width="60" height="60" alt="Client">
-                                                    <div>
-                                                        <h5 class="mb-0">Michael Chen</h5>
-                                                        <p class="mb-0 text-muted">Product Manager, EcoShop</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Testimonial 3 -->
-                            <div class="carousel-item">
-                                <div class="card testimonial-card">
-                                    <div class="card-body">
-                                        <div class="d-flex mb-3">
-                                            <i class="bi bi-quote text-primary display-1 me-3"></i>
-                                            <div>
-                                                <p class="card-text">Kamila's expertise in Flutter development helped us launch our productivity app on time and within budget. Her code is clean, well-documented, and her communication throughout the project was excellent.</p>
-                                                <div class="d-flex align-items-center mt-3">
-                                                    <img src="profile.jpg" class="rounded-circle me-3" width="60" height="60" alt="Client">
-                                                    <div>
-                                                        <h5 class="mb-0">Alex Rodriguez</h5>
-                                                        <p class="mb-0 text-muted">CTO, TaskMaster</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="timeline-item" data-delay="50">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="mb-1">Member of Organization Department - IPPNU Sukorejo, Pasuruan</h5>
+                            <p class="text-muted small mb-2">Jan 2025 - Present</p>
+                            <p class="mb-0">Supported event management and organizational development activities.</p>
                         </div>
-                        
-                        <div class="carousel-indicators position-relative mt-3">
-                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                </div>
+                <div class="timeline-item" data-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="mb-1">Secretary of Community Service - HIMA D4 Informatics Engineering, Universitas Airlangga</h5>
+                            <p class="text-muted small mb-2">Feb 2025 - Present</p>
+                            <p class="mb-0">Coordinated community service programs, documentation, and communication with stakeholders.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-delay="150">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="mb-1">Staff of Secretariat Division - Student Orientation Program, Universitas Airlangga</h5>
+                            <p class="text-muted small mb-2">Aug 2024 - Dec 2024</p>
+                            <p class="mb-0">Assisted in documentation, administration, and coordination during student orientation events.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="mb-1">Event Staff - Aliyah Campus Expo, Pasuruan</h5>
+                            <p class="text-muted small mb-2">Dec 2023 - Jan 2024</p>
+                            <p class="mb-0">Contributed to planning and logistics of campus expo events.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-delay="250">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="mb-1">Speaker Division Staff - Aliyah Campus Expo, Pasuruan</h5>
+                            <p class="text-muted small mb-2">Nov 2024 - Jan 2025</p>
+                            <p class="mb-0">Coordinated guest speakers and managed communication for sessions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-delay="300">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="mb-1">Executive Secretary - Inauguration Committee of IPNU IPPNU Sukorejo</h5>
+                            <p class="text-muted small mb-2">Jan 2025 - Feb 2025</p>
+                            <p class="mb-0">Drafted official letters, minutes, reports, and coordinated cross-division communication.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-delay="350">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="mb-1">Fundraising Division Staff - HIMTI CARES Vol. 3</h5>
+                            <p class="text-muted small mb-2">Apr 2025 - Jul 2025</p>
+                            <p class="mb-0">Raised and managed funds, built partnerships with sponsors and stakeholders.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-delay="400">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="mb-1">Person in Charge - MAKESTA RAYA IPNU IPPNU PR Kemiri</h5>
+                            <p class="text-muted small mb-2">Mar 2025 - Jun 2025</p>
+                            <p class="mb-0">Supervised planning and execution, ensured program goals were achieved.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-delay="450">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="mb-1">Head of Committee - Public Speaking Workshop</h5>
+                            <p class="text-muted small mb-2">Jul 2025 - Sep 2025</p>
+                            <p class="mb-0">Led the committee, coordinated speakers, participants, and logistics.</p>
                         </div>
                     </div>
                 </div>
@@ -492,69 +528,48 @@
         </div>
     </section>
 
-    <!-- Blog Section -->
-    <section id="blog" class="blog py-6 bg-light">
+    <!-- Education Section -->
+    <section id="education" class="education py-6 bg-light">
         <div class="container">
             <div class="row justify-content-center mb-5">
-                <div class="col-lg-6 text-center">
-                    <h6 class="text-primary fw-bold mb-2" data-aos="fade-up">MY BLOG</h6>
-                    <h2 class="fw-bold mb-4" data-aos="fade-up" data-aos-delay="100">Recent Articles</h2>
-                    <p class="mb-0" data-aos="fade-up" data-aos-delay="200">I share my knowledge and experiences through articles about website development, UI/UX design, and technology trends.</p>
+                <div class="col-lg-8 text-center">
+                    <h6 class="text-primary fw-bold mb-2" data-aos="fade-up">MY EDUCATION</h6>
+                    <h2 class="fw-bold mb-4 text-balance" data-aos="fade-up" data-aos-delay="100">Education History</h2>
+                    <p class="mb-0" data-aos="fade-up" data-aos-delay="150">Educational traces that formed my technical foundation.</p>
                 </div>
             </div>
-            
-            <div class="row g-4">
-                <!-- Blog Post 1 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                    <div class="card blog-card h-100">
-                        <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fkfnlhdhxlaxeym8rydjh.png" class="card-img-top" alt="Blog Post 1">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span class="text-muted small">March 15, 2025</span>
-                                <span class="badge bg-primary">Flutter</span>
+
+            <div class="row g-4 justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-6">
+                    <div class="edu-step card h-100 shadow-sm">
+                        <div class="card-body d-flex align-items-start gap-3">
+                            <div class="edu-icon">
+                                <i class="bi bi-mortarboard-fill"></i>
                             </div>
-                            <h5 class="card-title">Building Responsive UIs in Flutter</h5>
-                            <p class="card-text">Learn how to create responsive user interfaces in Flutter that adapt to different screen sizes and orientations.</p>
-                            <a href="#" class="btn btn-link p-0">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                            <div>
+                                <h5 class="card-title mb-1">Applied Bachelor's Degree in Informatics Engineering</h5>
+                                <p class="card-subtitle mb-2 text-muted">Universitas Airlangga, Surabaya</p>
+                                <p class="small text-muted mb-2">Aug 2023 - Present</p>
+                                <p class="mb-0">Studying advanced topics in software development, databases, and full stack technologies.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Blog Post 2 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card blog-card h-100">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDFd7pUqI3dP-WOPB26jHN2ahHem9i5D_ng&s" class="card-img-top" alt="Blog Post 2">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span class="text-muted small">February 28, 2025</span>
-                                <span class="badge bg-primary">UI/UX</span>
+                <div class="col-md-6" data-aos-delay="250">
+                    <div class="edu-step card h-100 shadow-sm">
+                        <div class="card-body d-flex align-items-start gap-3">
+                            <div class="edu-icon">
+                                <i class="bi bi-book-fill"></i>
                             </div>
-                            <h5 class="card-title">The Psychology of Color in UI Design</h5>
-                            <p class="card-text">Explore how color choices in user interfaces can influence user behavior and enhance the overall user experience.</p>
-                            <a href="#" class="btn btn-link p-0">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                            <div>
+                                <h5 class="card-title mb-1">High School - Mathematics and Natural Sciences</h5>
+                                <p class="card-subtitle mb-2 text-muted">MAS MAARIF SUKOREJO, Pasuruan</p>
+                                <p class="small text-muted mb-2">Jul 2020 - Jul 2023</p>
+                                <p class="mb-0">Focused on foundational sciences and mathematics, preparing for engineering studies.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Blog Post 3 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card blog-card h-100">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-5opSNlc5sfzIRkUPdrGFNYqR2bZ-XEvtNw&s" class="card-img-top" alt="Blog Post 3">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span class="text-muted small">January 10, 2025</span>
-                                <span class="badge bg-primary">Firebase</span>
-                            </div>
-                            <h5 class="card-title">Optimizing Firebase for Mobile Apps</h5>
-                            <p class="card-text">Tips and best practices for optimizing Firebase performance in your mobile applications for better user experience.</p>
-                            <a href="#" class="btn btn-link p-0">Read More <i class="bi bi-arrow-right ms-1"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-5" data-aos="fade-up">
-                <a href="#" class="btn btn-outline-primary px-4 py-2">View All Articles</a>
             </div>
         </div>
     </section>
@@ -607,7 +622,6 @@
                                 </div>
                             </div>
                             
-                            <!-- Find this section in your contact section and replace it -->
                             <h6 class="fw-bold mb-3">Follow Me</h6>
                             <div class="d-flex gap-3">
                                 <a href="https://github.com/kamilasaadah" class="social-icon social-icon-light"><i class="bi bi-github"></i></a>
@@ -624,7 +638,7 @@
                         <div class="card-body p-4">
                             <h3 class="fw-bold mb-3">Send Me an Email!</h3>
                             <p class="text-muted mb-4">Please fill out the form below to contact me. I'll get back to you as soon as possible 😊</p>
-                            <form>
+                            <form id="contactForm">
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating mb-3">
@@ -694,112 +708,14 @@
         <i class="bi bi-arrow-up"></i>
     </a>
 
+    <!-- Add scroll progress bar -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
     <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- EmailJS -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!-- Custom JS -->
-    <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 800,
-            once: true
-        });
-        
-        // Theme Toggle
-        const themeToggle = document.getElementById('theme-toggle');
-        const htmlElement = document.documentElement;
-        const themeIcon = themeToggle.querySelector('i');
-        
-        themeToggle.addEventListener('click', () => {
-            if (htmlElement.getAttribute('data-bs-theme') === 'light') {
-                htmlElement.setAttribute('data-bs-theme', 'dark');
-                themeIcon.classList.remove('bi-moon-fill');
-                themeIcon.classList.add('bi-sun-fill');
-            } else {
-                htmlElement.setAttribute('data-bs-theme', 'light');
-                themeIcon.classList.remove('bi-sun-fill');
-                themeIcon.classList.add('bi-moon-fill');
-            }
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // Navbar background change on scroll
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('navbar-scrolled');
-            } else {
-                navbar.classList.remove('navbar-scrolled');
-            }
-        });
-        
-        // Back to top button
-        const backToTopButton = document.querySelector('.back-to-top');
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-            backToTopButton.classList.add('show');
-            } else {
-            backToTopButton.classList.remove('show');
-            }
-        });
-
-        // Scroll halus ke atas
-        backToTopButton.addEventListener('click', (e) => {
-            e.preventDefault();
-            window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-            });
-        });
-
-        // Inisialisasi EmailJS
-        (function() {
-            emailjs.init("TmJ7sPL6T-MlKetfH"); // Ganti dengan Public Key
-        })();
-
-        // Tangani form
-        const contactForm = document.querySelector("form");
-        contactForm.addEventListener("submit", function(e) {
-            e.preventDefault();
-
-            const params = {
-                name: document.getElementById("nameInput").value,
-                email: document.getElementById("emailInput").value,
-                telp: document.getElementById("telpInput").value,
-                subject: document.getElementById("subjectInput").value,
-                message: document.getElementById("messageInput").value
-            };
-
-            emailjs.send("service_56uw811", "template_gumc96h", params)
-                .then(function() {
-                    alert("✅ Pesan berhasil dikirim!");
-                    contactForm.reset();
-                }, function(error) {
-                    alert("❌ Gagal mengirim pesan: " + JSON.stringify(error));
-                });
-        });
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
